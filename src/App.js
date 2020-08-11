@@ -9,7 +9,7 @@ class App extends Component {
     return <main className="app">
     <User />
     <AboutMe />
-    <h2 className='eudcation title'>EDUCATION</h2>
+    <h2 className="education-title">EDUCATION</h2>
     <Education />
     </main>;
   }

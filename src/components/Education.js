@@ -1,4 +1,5 @@
 import React from 'react';
+import './Education.css';
 
 const educations = [
   {
@@ -25,10 +26,12 @@ const educations = [
 
 const Education = () => {
   const educationList = educations.map(education => (
-    <div>
-      <h3>{education.year}</h3>
-      <h3>{education.title}</h3>
-      <p>{education.introduce}</p>
+    <div className="education">
+      <h3 className="education-year">{education.year}</h3>
+      <div className="education-content">
+        <h3 className="education-info">{education.title}</h3>
+        <p className="education-introduce">{education.introduce}</p>
+      </div>
     </div>
   ));
   return educationList;
